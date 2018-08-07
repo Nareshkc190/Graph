@@ -34,7 +34,7 @@ public class Point {
 		this.y = y;
 	}
 
-	public void swift(){
+	public void shift(){
 		++this.x;
 		++this.y;
 		
@@ -54,16 +54,23 @@ public class Point {
 	}
 	
 	public double distance(Point point){
-		double difX = (this.x - point.x) * (this.x - point.x);
-		double difY = (this.y - point.y) * (this.y - point.y);
+		double difX = Math.pow((this.x - point.x) , 2);
+		double difY = Math.pow((this.y - point.y) , 2);
 		return Math.sqrt(difX+difY);
 	}
 		
+	
+	public String toString(){
+		return ("(" + this.x + ","  + this.y + ")");
+	}
 		
 	
 
 
 }
+
+
+
 
 
 
