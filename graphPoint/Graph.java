@@ -17,14 +17,16 @@ public static void main(String[] args) {
 	System.out.println("Point1 is in " + point1.quadrant());
 	System.out.println("Point2 is in " + point2.quadrant());
 	System.out.println("Point3 is in " + point3.quadrant());
-	System.out.println("Point4 is in " + point4.quadrant()+ "\n");
+	System.out.println("Point4 is in " + point4.quadrant() + "\n");
 
+	point1.shift();
+	point4.shift();
 	
-	point1.swift();
-	point4.swift();
+	System.out.println("Point1 after shift: " + point1);
+	System.out.println("Point4 after shift:" + point4);	
 	
-	System.out.println("Point1 after swift: " + point1.getX()+ ", " + point1.getY());
-	System.out.println("Point4 after swift:" + point4.getX() + ", " + point4.getY());	
+	
 	
 }
 }
+
